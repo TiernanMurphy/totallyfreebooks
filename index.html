@@ -45,37 +45,50 @@
         margin-top: 10px; /* Add margin between the image and the link */
       }
 
-    a:hover {
-        font-size: 18px;
-    }
-        
+      a:hover {
+         font-size: 18px;
+         }
+
       @media (max-width: 500px)  {
       tr {
         flex-direction: column;
         align-items: center;
         }
       }
+
+      #hiddentext {
+         display: none;
+         margin-top: 20px;
+      }
+
     </style>
 </head>
 <body>
 
-  <table>  <!-- psych of money, atomic habits, and steve jobs row -->
+    <form action="/search" method="get">
+        <!-- The input element with type "text" represents the search bar -->
+        <input type="text" name="query" placeholder="title or author">
+        <!-- The submit button triggers the form submission -->
+        <button type="submit">Search for Books</button>
+    </form>
+
+  <table>  <!-- first row of books -->
     <tbody>
       <tr>
         <td>
-          <img src="psychology of money.jpg" alt="image not found">
+          <img src="psychology of money.jpg" alt="image not found">  <!-- psych of money -->
           <br><figcaption><em>The Psychology of Money</em><br> by Morgan Housel</figcaption>
-          <a href="https://pdflake.com/wp-content/uploads/2022/01/The-Psychology-of-Money-PDF.pdf" alt="link not available">Free PDF</a>
+          <a href="https://pdflake.com/wp-content/uploads/2022/01/The-Psychology-of-Money-PDF.pdf" alt="link not available" >Free PDF</a>
         </td>
 
         <td>
-          <img src="atomic habits.jpg" alt="image not found">
+          <img src="atomic habits.jpg" alt="image not found">  <!-- atomic habits -->
           <br><figcaption><em>Atomic Habits</em> by James Clear</figcaption>
           <a href="https://ztcprep.com/library/story/Atomic_Habits/Atomic_Habits_(www.ztcprep.com).pdf" alt="link not available">Free PDF</a>
         </td>
 
         <td>
-          <img src="steve jobs.jpg" alt="image not found">
+          <img src="steve jobs.jpg" alt="image not found">  <!-- steve jobs -->
           <br><figcaption><em>Steve Jobs </em>by Walter Isaacson</figcaption>
           <a href="https://www.readdiary.com/wp-content/uploads/2022/05/Steve-Jobs-PDFDrive-1.pdf" alt="link not available">Free PDF</a>
         </td>
@@ -89,7 +102,7 @@
     </tbody>
   </table>
 
-  <table>  <!-- outliers, zero to one, and elon musk row -->
+  <table>  <!-- second row of books -->
     <tbody>
       <tr>
         <td>
@@ -99,19 +112,19 @@
         </td>
 
         <td>
-          <img src="the molecule of more.jpg" alt="image not found">
-          <br><figcaption><em>The Molecule of More </em>by Daniel Z. Lieberman</figcaption> <!-- molecule of more -->
+          <img src="the molecule of more.jpg" alt="image not found">  <!-- molecule of more -->
+          <br><figcaption><em>The Molecule of More </em><br>by Daniel Z. Lieberman</figcaption>
           <a href="https://metallicman.com/wp-content/uploads/asgarosforum/5912/The-Molecule-of-More-by-Daniel-Z.-Lieberman-Michael-E.-Long-pdf-version.pdf" alt="link not available">Free PDF</a>
         </td>
 
         <td>
-          <img src="muskcover.jpg" alt="image not found">
-          <br><figcaption><em>Elon Musk</em> by Walter Isaacson</figcaption> <!-- elon musk -->
+          <img src="muskcover.jpg" alt="image not found">  <!-- elon musk -->
+          <br><figcaption><em>Elon Musk</em> by Walter Isaacson</figcaption>
           <a href="https://archive.org/details/elon-musk-by-walter-isaacson/page/n439/mode/2up?view=theater" alt="link not available">Free PDF</a>
         </td>
 
         <td>
-          <img src="good to great.jpg" alt="image not found">
+          <img src="good to great.jpg" alt="image not found">  <!-- good to great -->
           <br><figcaption><em>Good to Great</em> by Jim Collins</figcaption>
           <a href="https://laithaljunaidy.com/books/assets/files/Good-toGreat_WhySomeCompaniesMaketheLeap...AndOthersDontPDFDrive.pdf" alt="link not available">Free PDF</a>
         </td>
@@ -119,122 +132,121 @@
     </tbody>
   </table>
 
-<table>
+<table>  <!-- third row of books -->
   <tbody>
     <tr>
       <td>
-        <img src="principles.jpg" alt="image not found">
+        <img src="principles.jpg" alt="image not found">  <!-- principles -->
         <br><figcaption><em>Principles</em> by Ray Dalio</figcaption>
         <a href="https://uploads-ssl.webflow.com/5dfc6b53305f515787db819a/5e035622ed2a277eb557c13a_Principles%20-%20Dalio%2C%20Ray.pdf" alt="link not available">Free PDF</a>
       </td>
 
       <td>
-        <img src="thinking.jpg" alt="image not found">
-        <br><figcaption><em>Thinking, Fast and Slow</em> by Daniel Kahneman</figcaption>
+        <img src="thinking.jpg" alt="image not found">  <!-- thinking fast and slow -->
+        <br><figcaption><em>Thinking, Fast and Slow</em><br>by Daniel Kahneman</figcaption>
         <a href="http://dspace.vnbrims.org:13000/jspui/bitstream/123456789/2224/1/Daniel-Kahneman-Thinking-Fast-and-Slow-.pdf" alt="link not available">Free PDF</a>
       </td>
 
       <td>
-        <img src="advantage.jpg" alt="image not found">
-        <br><figcaption><em>The Unfair Advantage</em> by Ash Ali & Hasan Kubba</figcaption>
-        <a href="https://profilebooks.com/wp-content/uploads/wpallimport/files/PDFs/9781782835974_preview.pdf" alt="link not available">Free PDF</a>
+        <img src="lean.jpg" alt="image not found">  <!-- the lean startup -->
+        <br><figcaption><em>The Lean Startup</em><br>by Eric Ries</figcaption>
+        <a href="https://ia800509.us.archive.org/7/items/TheLeanStartupErickRies/The%20Lean%20Startup%20-%20Erick%20Ries.pdf" alt="link not available">Free PDF</a>
       </td>
 
       <td>
-        <img src="peterson.jpg" alt="image not found">
-        <br><figcaption><em>12 Rules for Life</em> by Jordan Peterson</figcaption>
+        <img src="peterson.jpg" alt="image not found">  <!-- 12 rules for life -->
+        <br><figcaption><em>12 Rules for Life</em><br>by Jordan Peterson</figcaption>
         <a href="https://nasihah.net/wp-content/uploads/books/12-Rules-for-Life.pdf" alt="link not available">Free PDF</a>
       </td>
     </tr>
   </tbody>
 </table>
 
-<table>
+<table>  <!-- fourth row of books -->
   <tbody>
     <tr>
       <td>
-        <img src="habits.jpg" alt="image not found">
+        <img src="habits.jpg" alt="image not found">  <!-- 7 habits -->
         <br><figcaption><em>The 7 Habits of Highly Effective People</em> by Stephen R. Covey</figcaption>
         <a href="https://icrrd.com/public/media/01-11-2020-212827The%207%20Habits%20of%20Highly%20Effective%20People.pdf" alt="link not available">Free PDF</a>
       </td>
 
       <td>
-        <img src="fuck.jpg" alt="image not found">
+        <img src="fuck.jpg" alt="image not found">  <!-- subtle art -->
         <br><figcaption><em>The Subtle Art of Not Giving a F*CK</em> by Mark Manson</figcaption>
         <a href="https://s1.papyruspub.com/files/demos/products/ebooks/novels/inspiring/Preview-The-Subtle-Art-of-Not-Giving-a-Fck.pdf" alt="link not available">Free PDF</a>
       </td>
 
       <td>
-        <img src="freakonomics.jpg" alt="image not found">
+        <img src="freakonomics.jpg" alt="image not found">  <!-- freakonomics -->
         <br><figcaption><em>Freakonomics</em> by Steven D. Levitt and Stephen J. Dubner</figcaption>
         <a href="http://christophe.heintz.free.fr/bgt/Freakonomics__A_Rogue_Economist_Explores_the_Hidden_Side_of_Everything__Revised_and_Expanded_.pdf" alt="link not available">Free PDF</a>
       </td>
 
       <td>
-        <img src="millionaire.jpg" alt="image not found">
-        <br><figcaption><em>The Millionaire Fastlane</em> by MJ DeMarco</figcaption>
+        <img src="millionaire.jpg" alt="image not found">  <!-- millionaire fastlane -->
+        <br><figcaption><em>The Millionaire Fastlane</em><br>by MJ DeMarco</figcaption>
         <a href="https://ia601009.us.archive.org/27/items/the-millionaire-fastlane-140113153049-phpapp01/the-millionaire-fastlane.pdf" alt="link not found">Free PDF</a>
       </td>
     </tr>
   </tbody>
 </table>
 
-<table>
+<table>  <!-- fifth row of books -->
   <tbody>
     <tr>
 
       <td>
-        <img src="algorithms.png" alt="image not found">
+        <img src="algorithms.png" alt="image not found">  <!-- algorithms to live by -->
         <br><figcaption><em>Algorithms to Live By</em> <br>Brian Christian and Tom Griffiths</figcaption>
         <a href="https://kolegite.com/EE_library/books_and_lectures/Програмиране/algorithms-to-live-by-the-computer-science-of-tom--annas-archive--libgenrs-nf-3206012.pdf" alt="link not available">Free PDF</a>
       </td>
 
       <td>
-        <img src="ocean.jpg" alt="image not found">
-        <br><figcaption><em>Blue Ocean Strategy</em><br>W. Chan Kim and Renee Mauborgne</figcaption>
+        <img src="ocean.jpg" alt="image not found">  <!-- blue ocean strategy -->
+        <br><figcaption><em>Blue Ocean Strategy</em> by W. Chan Kim and Renee Mauborgne</figcaption>
         <a href="https://irp-cdn.multiscreensite.com/cb9165b2/files/uploaded/Blue%20Ocean%20Strategy%2C%20Expanded%20Edition_%20How%20to%20Create%20Uncontested%20Market%20Space%20and%20Make%20the%20Competition%20Irrelevant%20%28%20PDFDrive.com%20%29.pdf" alt="image not found">Free PDF</a>
       </td>
 
       <td>
-        <img src="germs.jpg" alt="image not found">
-        <br><figcaption><em>Guns, Germs, and Steel</em> by Jared Diamond</figcaption>
+        <img src="germs.jpg" alt="image not found">  <!-- guns germs and steel -->
+        <br><figcaption><em>Guns, Germs, and Steel</em><br>Jared Diamond</figcaption>
         <a href="https://ia600301.us.archive.org/13/items/fp_Jared_Diamond-Guns_Germs_and_Steel/Jared_Diamond-Guns_Germs_and_Steel.pdf" alt="link not available">Free PDF</a>
       </td>
 
       <td>
-        <img src="billionaires.jpg" alt="image not found">
-        <br><figcaption><em>The Accidental Billionaires</em> by Ben Mezrich</figcaption>
+        <img src="billionaires.jpg" alt="image not found">  <!-- the accidental billionaires -->
+        <br><figcaption><em>The Accidental Billionaires</em><br>Ben Mezrich</figcaption>
         <a href="https://avalonlibrary.net/ebooks/Ben%20Mezrich%20-%20The%20Accidental%20Billionaires.pdf" alt="link not available">Free PDF</a>
       </td>
-
     </tr>
   </tbody>
 </table>
 
-<table>
+  <table> <!-- sixth row of books -->
     <tbody>
       <tr>
 
         <td>
-        <img src="green.jpg" alt="image not found">
-        <br><figcaption><em>The Laws of Human Nature</em> by Robert Green</figcaption>
+        <img src="green.jpg" alt="image not found">  <!-- laws of human nature -->
+        <br><figcaption><em>The Laws of Human Nature</em><br>Robert Green</figcaption>
         <a href="https://irp-cdn.multiscreensite.com/cb9165b2/files/uploaded/The%20Laws%20of%20Human%20Nature.pdf" alt="link not available">Free PDF</a>
         </td>
 
         <td>
-          <img src="sapiens.jpg" alt="image not found">
-          <br><figcaption><em>Sapiens: A Brief History of Humankind</em><br>Yuval Noah Harari</figcaption>
+          <img src="sapiens.jpg" alt="image not found">  <!-- sapiens -->
+          <br><figcaption><em>Sapiens: A Brief History of Humankind</em> by Yuval Noah Harari</figcaption>
           <a href=https://www.1pezeshk.com/wp-content/uploads/2019/07/Sapiens-A-Brief-History-of-Humankind.pdf" alt="link not available">Free PDF</a>
         </td>
 
         <td>
-          <img src="built.jpg" alt="image not found">
+          <img src="built.jpg" alt="image not found">  <!-- built to last -->
           <br><figcaption><em>Built to Last</em><br>Jim Collins and Jerry I. Porras</figcaption>
           <a href="http://www.almohamady.com/main/upload/success_built_to_last.pdf" alt="link not available">Free PDF</a>
         </td>
 
         <td>
-          <img src="painters.jpg" alt="image not found">
+          <img src="painters.jpg" alt="image not found">  <!-- hackers and painters -->
           <br><figcaption><em>Hackers and Painters: Big Ideas From the Computer Age</em><br>by Paul Graham</figcaption>
           <a href="https://digtvbg.com/files/books-for-hacking/Hackers%20%26%20Painters%20-%20Big%20Ideas%20From%20The%20Computer%20Age%20by%20Paul%20Graham.pdf" alt="link not available">Free PDF</a>
         </td>
@@ -366,8 +378,9 @@
         <a href="https://altair.pw/pub/lib/How%20to%20Become%20a%20Straight-A%20Student.pdf" alt="link not available">Free PDF</a>
       </td>
 
-        </tr>
-      </tbody>
-    </table>
-    </body>
+    </tr>
+  </tbody>
+</table>
+
+</body>
 </html>
